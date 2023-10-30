@@ -59,9 +59,9 @@
 
 ---
 
-1. Lasr
-2. Lost
-3. Hesh
+1. [Site](site/example.html)
+2. Readme
+3. Tech.Spec.
 - [**Выравнивание на уровне блока**](#выравнивание-на-уровне-блока)
   - [**CSS**](#css)
   - [**HTML**](#html)
