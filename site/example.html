@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>example 0</title>
+
+<style>
+
+html {
+  /* Определимся с `rem` */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+}
+
+.page {
+  display: flex;
+  max-width: 1010px;
+  width: 100%;
+  margin: 0px auto 80px;
+  /* padding: 10px 0 0px; */
+}
+
+.body {
+  /* display: flex; */
+  /* flex-flow: row wrap; */
+  position: relative;
+  background-color: white;
+  margin: 0;
+
+  background: url("images/beach-dawn-desktop-backgrounds-1532771.jpg") no-repeat center fixed; 
+  background-size: cover;
+}
+
+.header {
+  margin: 30px auto 20px;
+  /* margin: 0 auto; */
+  height: 80px;
+  background-color: black;
+  top: 0px;
+  position: sticky;
+  border-radius: 15px;
+  opacity: 0.9;
+}
+
+.footer {
+  /* display: flex; */
+  /* position: sticky; */
+  position: fixed;
+  bottom: 0px;
+  height: 60px;
+  width: 100vw;
+  margin: 0;
+  background-color: #2c2c2c;
+}
+
+.main {
+  /* height: 1000px; */
+  background-color: lightgray;
+  background-color: rgba(90, 120, 120, 0.6);
+  /* opacity: .8; */
+  /* min-width: 100vh; */
+  /* margin: 5px auto 0; */
+  flex-wrap: wrap;
+  /* margin: 0 auto; */
+  /* padding: 35px auto; */
+  border-radius: 15px;
+}
+
+.card {
+  display: flex;
+  /* position: relative; */
+  width: 320px;
+  height: 240px;
+  border: 1px solid darkgray;
+  margin: 10px 0px 0 10px;
+  border-radius: 5%;
+  /* opacity: .5; */
+  /* background-color: aliceblue; */
+  /* background-attachment: fixed; */
+  /* background-image: url("images/beach-dawn-desktop-backgrounds-1532771.jpg"); */
+
+  background-image: url("images/office-inplace.jpg");
+  /* background-image: url("images/office.jpeg"); */
+
+  /* background-repeat: no-repeat; */
+  /* background-size: auto 100%; */
+  /* background-position: center; */
+  background-size: cover;
+
+  /* background-image: url("images/icons8-youtube-play-48.svg"); */
+
+  align-items: center;
+  justify-content: center;
+
+}
+
+.card:last-child {
+  margin: 10px 10px 10px 10px;
+}
+
+#inherit {
+  display: inherit;
+  /* flex-flow: row wrap; */
+  width: 100vw;
+  height: 2em;
+}
+
+.youtube {
+  display: flex;
+  /* flex-flow: 1 1 200px; */
+  /* display: block; */
+  /* position: relative; */
+  /* top: 50%; */
+  /* bottom: 0; */
+  /* position: absolute; */
+  /* vertical-align: middle; */
+  /* box-shadow: 2px 2px; */
+  width: 100%;
+  /* justify-self: center; */
+  align-items: center;
+  justify-content: center;
+}
+
+.info {
+  height: 0px;
+}
+
+</style>
+
+</head>
+<body class="body">
+  <header class="header page"></header>
+
+  <main class="main page">
+    <div class="card">
+      <div class="youtube">
+        <img width="100px" src="images/icons8-youtube-play-48.svg" alt="">
+      </div>
+    </div>
+    <div class="card">
+      <div class="youtube">
+      </div>
+    </div>
+    <div class="card"></div>
+
+    <div class="card">
+      <img width="100px" src="images/icons8-youtube-play-48.svg" alt="">
+    </div>
+    <div class="card"></div>
+    <div class="card"></div>
+
+    <!-- <div id="inherit"></div> -->
+
+  </main>
+
+  <div class="info page"></div>
+
+  <main class="main page">
+
+    <div class="card">
+      <img width="100px" src="images/icons8-youtube-play-48.svg" alt="">
+    </div>
+    <div class="card"></div>
+    <div class="card"></div>
+
+    <div class="card">
+      <img width="100px" src="images/icons8-youtube-play-48.svg" alt="">
+    </div>
+    <div class="card"></div>
+    <div class="card"></div>
+
+    <!-- <div id="inherit"></div> -->
+
+  </main>
+
+  <footer class="footer"></footer>
+</body>
+</html>
